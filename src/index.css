@@ -7,7 +7,8 @@
     --focus_statement_no_color: #f2f2f2;
     --contact_us_bg_color: #f3f3f3;
     --about_sectn_bg_color: #fbfbfb;
-
+    --footer_color: #2c2c2c;
+    --footer_copyright_color: #c8c8c880;
     --black_color: black;
     --white_color: white;
 
@@ -39,9 +40,18 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .wrapper {
     max-width: var(--max-width);
     width: 80%;
     /* border: 1px solid red; */
     margin-inline: auto;
+}
+
+section {
+    margin-top: var(--nav_height);
 }
