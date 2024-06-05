@@ -23,6 +23,7 @@
     --max_width: 1240px;
 
     --nav_height: 102px;
+    --nav_height_mobile: 70px;
 
     --transition: all 0.3s ease-in-out;
 }
@@ -54,4 +55,14 @@ a {
 
 section {
     margin-top: var(--nav_height);
+}
+
+@media screen and (max-width: 950px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    section {
+        margin-top: var(--nav_height_mobile);
+    }
 }
