@@ -10,6 +10,7 @@ nav {
     left: 0;
     width: 100vw;
     background-color: var(--white_color);
+    z-index: 99;
 }
 
 .nav_container {

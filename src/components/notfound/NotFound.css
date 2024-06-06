@@ -24,3 +24,9 @@
 .notfound_container a:hover {
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 950px) {
+    .notfound_container {
+        min-height: calc(100vh - var(--nav_height_mobile));
+    }
+}
