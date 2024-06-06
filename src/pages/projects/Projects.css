@@ -28,6 +28,7 @@
 .project_item {
     display: grid;
     grid-template-columns: 57.3% 42.7%;
+    background-color: var(--about_sectn_bg_color);
 }
 
 .project_image img {
@@ -38,7 +39,6 @@
 }
 
 .project_info {
-    background-color: var(--about_sectn_bg_color);
     display: flex;
     flex-direction: column;
     gap: 2rem;
