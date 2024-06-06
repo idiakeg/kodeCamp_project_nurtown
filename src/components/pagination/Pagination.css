@@ -1,0 +1,36 @@
+.pagination {
+    width: fit-content;
+    font-size: var(--font_xmd);
+    color: var(--primary_sctn_txt_color);
+    display: flex;
+    gap: 2rem;
+    font-weight: 400;
+}
+
+.pagination span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination_slash {
+    border: 1px solid #e0e0e0;
+    transform: rotate(45deg);
+    height: 79%;
+    align-self: center;
+}
+
+.pagination span:first-child {
+    color: var(--primary_txt_color);
+}
+
+.pagination_direction {
+    width: 52px;
+    height: 53px;
+    border: 1px solid #f2f2f2;
+    cursor: pointer;
+}
+
+.pagination_direction:last-of-type {
+    background: #f9f9f9;
+}
