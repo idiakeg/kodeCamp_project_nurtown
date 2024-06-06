@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./Home.css";
 import forward from "../../assets/forward_arrow.svg";
 import backward from "../../assets/back_arrow.svg";
@@ -14,7 +15,6 @@ import home_prj4 from "../../assets/home/home_project4.png";
 import home_prj5 from "../../assets/home/home_project5.svg";
 import white_arrow from "../../assets/white_arrow.svg";
 import contact_us_img from "../../assets/home/home_contactus.svg";
-import { useState } from "react";
 
 const Home = () => {
     const [flag, setFlag] = useState({
@@ -22,6 +22,7 @@ const Home = () => {
         email: false,
         message: false,
     });
+
     const handleChange = (e) => {
         if (e.target.value !== " ") {
             setFlag((prev) => {
@@ -36,6 +37,7 @@ const Home = () => {
             setFlag(false);
         }
     };
+
     return (
         <section>
             <div className="wrapper home_container">
