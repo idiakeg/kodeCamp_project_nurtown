@@ -20,6 +20,7 @@ const Navbar = () => {
                     {links.map((item, index) => (
                         <li key={index}>
                             <NavLink
+                                onClick={() => setHamburgerToggle(false)}
                                 to={item.path}
                                 className={({ isActive }) =>
                                     isActive ? "active_nav" : undefined
