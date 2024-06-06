@@ -1,1 +1,215 @@
+.project_lorum {
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: 36.9% 61.1%;
+    gap: 2%;
+    min-height: calc(100vh - var(--nav_height));
+}
 
+.project_lorum .left {
+    color: var(--primary_sctn_txt_color);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 4rem;
+    padding-bottom: 4rem;
+}
+
+.project_lorum .left p {
+    color: var(--primary_sctn_txt_color);
+    font-size: var(--font_xlg);
+    line-height: 64px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.project_lorum .left p span {
+    color: var(--primary_txt_color);
+    font-weight: 700;
+}
+
+.home_pag_arrow {
+    width: fit-content;
+    display: flex;
+    gap: 2rem;
+}
+
+.home_pag_arrow span {
+    border: 1px solid #f2f2f2;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+    width: 52px;
+    height: 53px;
+    transition: var(--transition);
+}
+
+.home_pag_arrow span:hover {
+    transform: scale(1.1);
+}
+
+.home_pag_arrow span:last-of-type {
+    background: #f9f9f9;
+}
+
+.home_pag_pagi_info {
+    font-size: var(--font_xmd);
+    display: flex;
+    gap: 2rem;
+}
+
+.home_pag_pagi_separator {
+    border: 1px solid #e0e0e0;
+    transform: rotate(45deg);
+}
+
+.project_lorum .right {
+    position: relative;
+}
+
+.project_lorum .right img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project_lorum .right span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white_color);
+    padding: 1.5rem 3rem;
+    text-transform: uppercase;
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    font-size: var(--font_xsm);
+    font-weight: 400;
+    line-height: 12px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.project_lorum .right span:hover {
+    padding-inline: 3.5rem;
+}
+
+.project_lorum .right span img {
+    width: 24px;
+}
+
+/* ================ About Us =============== */
+.about_us {
+    margin-top: 5.5rem;
+    background-color: var(--about_sectn_bg_color);
+    display: grid;
+    grid-template-columns: 50.9% 36.19%;
+    padding-left: 9.2%;
+    gap: 1.5rem;
+}
+
+.about_us p {
+    margin: 0;
+}
+
+.about_us .left {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    position: relative;
+    top: 2rem;
+}
+
+.about_us .left div {
+    width: 100%;
+    max-width: 270px;
+}
+
+.about_us .left .one_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_us .left .two_img {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.about_us .left div img {
+    display: inline-block;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about_us .left .two_img img {
+    height: 100%;
+}
+
+.about_us .right {
+    font-weight: 300;
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem 0;
+}
+
+.about_us_head {
+    line-height: 64px;
+    font-size: var(--font_xlg);
+    color: var(--primary_sctn_txt_color);
+}
+
+.about_us_body {
+    color: var(--black_color);
+    line-height: 25px;
+    font-size: var(--font_md);
+}
+
+.about_us_btn {
+    background-color: var(--white_color);
+    margin-top: 1rem;
+}
+
+.home_btn {
+    padding: 1.3rem 3rem;
+    font-size: var(--font_xsm);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: fit-content;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.home_btn img {
+    display: inline-block;
+    width: 24px;
+}
+
+.home_btn:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 800px) {
+    .project_lorum {
+        grid-template-columns: 1fr;
+        padding-top: 2rem;
+    }
+
+    .about_us {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+        padding-inline: 2rem;
+    }
+
+    .about_us .left {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .project_lorum {
+        min-height: calc(100vh - var(--nav_height_mobile));
+    }
+}
