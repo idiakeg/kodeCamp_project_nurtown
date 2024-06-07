@@ -5,11 +5,13 @@ import Home from "./pages/home/Home";
 import Gallery from "./pages/gallery/Gallery";
 import NotFound from "./components/notfound/NotFound.jsx";
 import Projects from "./pages/projects/Projects.jsx";
+import ScrollToTop from "./ScrollToTop.jsx";
 
 function App() {
     return (
         <BrowserRouter>
             <Navbar />
+            <ScrollToTop />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/gallery" element={<Gallery />} />
