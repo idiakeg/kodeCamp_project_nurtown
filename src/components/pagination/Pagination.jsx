@@ -9,10 +9,10 @@ const Pagination = () => {
             <span className="pagination_slash"></span>
             <span>05</span>
             <span className="pagination_direction">
-                <img src={forward} alt="go back" />
+                <img src={backward} alt="go back" />
             </span>
             <span className="pagination_direction">
-                <img src={backward} alt="go forward" />
+                <img src={forward} alt="go forward" />
             </span>
         </div>
     );
