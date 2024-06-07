@@ -6,6 +6,10 @@
     min-height: calc(100vh - var(--nav_height));
 }
 
+.pagi_flag {
+    display: none;
+}
+
 .project_lorum .left {
     color: var(--primary_sctn_txt_color);
     display: flex;
@@ -496,6 +500,20 @@ textarea.changed + .asterisk {
 @media screen and (max-width: 950px) {
     .project_lorum {
         min-height: calc(100vh - var(--nav_height_mobile));
+    }
+
+    .pagi_flag {
+        display: block;
+        margin-top: 2rem;
+    }
+
+    .home_pag_pagi_info,
+    .home_pag_arrow {
+        display: none;
+    }
+
+    .project_lorum .left {
+        padding-bottom: 2rem;
     }
 
     .ms_container {

@@ -16,6 +16,7 @@ import home_prj4 from "../../assets/home/home_project4.png";
 import home_prj5 from "../../assets/home/home_project5.svg";
 import white_arrow from "../../assets/white_arrow.svg";
 import contact_us_img from "../../assets/home/home_contactus.svg";
+import Pagination from "../../components/pagination/Pagination";
 
 const Home = () => {
     const navigate = useNavigate();
@@ -71,6 +72,9 @@ const Home = () => {
                         >
                             View Project <img src={forward} alt="view more" />
                         </span>
+                    </div>
+                    <div className="pagi_flag">
+                        <Pagination />
                     </div>
                 </div>
                 <div className="about_us">
