@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import forward from "../../assets/forward_arrow.svg";
 import backward from "../../assets/back_arrow.svg";
@@ -17,6 +18,7 @@ import white_arrow from "../../assets/white_arrow.svg";
 import contact_us_img from "../../assets/home/home_contactus.svg";
 
 const Home = () => {
+    const navigate = useNavigate();
     const [flag, setFlag] = useState({
         phone_no: false,
         email: false,
@@ -63,7 +65,10 @@ const Home = () => {
                     </div>
                     <div className="right">
                         <img src={home1} alt="project lorum" />
-                        <span className="home_view_project">
+                        <span
+                            onClick={() => navigate("/projects")}
+                            className="home_view_project"
+                        >
                             View Project <img src={forward} alt="view more" />
                         </span>
                     </div>
@@ -139,7 +144,10 @@ const Home = () => {
                         <img src={home_prj5} alt="home project" />
                     </div>
                     <div className="all_projects">
-                        <span className="projects_btn home_btn">
+                        <span
+                            onClick={() => navigate("/projects")}
+                            className="projects_btn home_btn"
+                        >
                             ALL PROJECTS
                             <img src={white_arrow} alt="continue" />
                         </span>
