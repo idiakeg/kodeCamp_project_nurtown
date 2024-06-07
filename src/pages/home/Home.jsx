@@ -135,8 +135,19 @@ const Home = () => {
                 <div className="our_projects">
                     <div className="op_head">Our Projects</div>
                     <div className="op_container">
+                        {/* TODO: Implement the overlay. */}
                         <div className="overlay_doings">
                             <img src={home_prj1} alt="home project" />
+                            <div className="overlay_content">
+                                <div className="">
+                                    Sample <br />
+                                    Project
+                                </div>
+                                <span>
+                                    view more{" "}
+                                    <img src={white_arrow} alt="continue" />
+                                </span>
+                            </div>
                         </div>
                         <img src={home_prj2} alt="home project" />
                         <img src={home_prj3} alt="home project" />

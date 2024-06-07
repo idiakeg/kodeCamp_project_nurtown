@@ -276,6 +276,8 @@
 .op_container .overlay_doings {
     grid-column-start: 1;
     grid-column-end: 3;
+    position: relative;
+    height: 160px;
 }
 
 .op_container img:nth-of-type(1) {
@@ -296,6 +298,50 @@
 .op_container img:nth-of-type(4) {
     grid-column-start: 4;
     grid-column-end: 5;
+}
+
+.overlay_doings::before {
+    content: "";
+    background: #333333aa;
+    position: absolute;
+    inset: 0;
+}
+
+.overlay_content {
+    width: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+    font-size: var(--font_lg);
+    line-height: 40px;
+    font-weight: 700;
+    color: var(--white_color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.overlay_content span {
+    font-size: var(--font_xsm);
+    line-height: 12px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: var(--transition);
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.overlay_content span:hover {
+    padding-left: 10px;
+}
+
+.overlay_content span img {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
 }
 
 .all_projects {
