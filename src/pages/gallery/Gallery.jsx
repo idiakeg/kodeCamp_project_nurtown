@@ -9,8 +9,10 @@ import img7 from "../../assets/gallery_page_img/gallery_img7.svg";
 import img8 from "../../assets/gallery_page_img/gallery_img8.svg";
 import img9 from "../../assets/gallery_page_img/gallery_img9.svg";
 import Pagination from "../../components/pagination/Pagination";
+import useTitle from "../../hooks/useTitle";
 
 const Gallery = () => {
+    useTitle("Gallery Page");
     return (
         <section>
             <div className="gallery_container wrapper">

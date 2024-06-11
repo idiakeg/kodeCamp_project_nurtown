@@ -2,8 +2,10 @@ import { projects } from "../../utils";
 import forward from "../../assets/forward_arrow.svg";
 import "./Projects.css";
 import Pagination from "../../components/pagination/Pagination";
+import useTitle from "../../hooks/useTitle";
 
 const Projects = () => {
+    useTitle("Projects Page");
     return (
         <section>
             <div className="wrapper project_container">
